@@ -1,0 +1,179 @@
+/* -------- font-face-------- */
+ @font-face {
+    font-family: "poppinsRegular";
+    src: url(../fonts/Poppins-Regular.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-family: "poppinsMedium";
+    src: url(../fonts/Poppins-Medium.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-family: "poppinsBold";
+    src: url(../fonts/Poppins-Bold.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-family: "poppinsSemiBold";
+    src: url(../fonts/Poppins-SemiBold.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-family: "poppinsBlack";
+    src: url(../fonts/Poppins-Black.ttf) format("truetype");
+  }
+
+/* -------- reset file-------- */ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    text-decoration: none;
+}
+
+/* ---------------Start of customized styles----------------- */
+:root{
+    --primaryColor:#0ABEAD;
+    --secondColor:#F57F17;
+    --purple:#8540FF;
+    --yellow:#FFC50C;
+    --magenta:#EC407A;
+    --orange:#FF6331;
+    --blue:#13B6FF;
+    --green:#49AF46;
+    --black:#333333;
+    --white:#FFFFFF;
+    --primaryFontR:"poppinsRegular";
+    --primaryFontM:"poppinsMedium";
+    --primaryFontB:"poppinsBold";
+    --primaryFontSB:"poppinsSemiBold";
+    --primaryFontBl:"poppinsBlack";
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /*10px */
+    scroll-behavior: smooth;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+body{
+    font-size: 1.6rem;
+    font-family: var(--primaryFontR);
+    line-height: 1.5;
+    background-color: var(--white);
+}
+
+/* ---------------------------------------- app style----------------------------- */
+
+/* -------- header style-------- */
+.header{
+    box-shadow: 0 0.5rem 4rem rgba(4, 195, 255, 16%);
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    font-family: var(--primaryFontM);
+}
+.menu__item{
+    margin-right: 4rem;
+}
+.menu__item:last-child{
+    margin-right:0;
+}
+.menu__link--active{
+    color: var(--primaryColor) ;
+}
+.nav__hamburgerMenu{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1.5rem;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+}
+.nav__hamburgerMenu--line{
+    width: 3.5rem;
+    height: 0.3rem;
+    border-radius: 2rem;
+    background-color: var(--primaryColor);
+    position: relative;
+    transition: all 100ms ease-in;
+}
+.nav__hamburgerMenu--line::before,
+.nav__hamburgerMenu--line::after{
+    content: '';
+    width: 3.5rem;
+    height: 0.3rem;
+    border-radius: 2rem;
+    background-color: var(--primaryColor);
+    position: absolute;
+    transition: all 150ms ease-in;
+}
+.nav__hamburgerMenu--line::before{
+    top: 0.8rem;
+}
+.nav__hamburgerMenu--line::after{
+    top: -0.8rem;
+}
+.nav__hamburgerMenu--open .nav__hamburgerMenu--line{
+    background-color: transparent;
+}
+.nav__hamburgerMenu--open .nav__hamburgerMenu--line::before{
+    transform: translateY(-8px) rotate(-45deg);
+}
+.nav__hamburgerMenu--open .nav__hamburgerMenu--line::after{
+    transform: translateY(8px) rotate(45deg);
+}
+
+

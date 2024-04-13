@@ -1,0 +1,46 @@
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 992px) {
+    .nav__appLogo{
+        width: 12rem;
+    }
+    .menu{
+        font-size: 1.4rem;
+    }
+    .menu__item{
+        margin-right: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu{
+       width: 100%;
+       position: absolute;
+       top: 100%;
+       left: 0;
+       right: 0;
+       background-color:#fff ;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       transition: all 200ms ease-in;
+       height: 0;
+       overflow: hidden;
+    }
+    .menu--open{
+        height: 23.8rem;
+    }
+    .menu__item{
+        margin-right:0;
+        line-height: 3.4rem;
+    }
+    .nav__hamburgerMenu{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+}
