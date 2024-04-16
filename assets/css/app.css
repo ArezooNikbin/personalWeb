@@ -81,6 +81,7 @@ a{
     --magenta:#EC407A;
     --orange:#FF6331;
     --blue:#13B6FF;
+    --tiffany:#0CBFAE ;
     --green:#49AF46;
     --black:#333333;
     --white:#FFFFFF;
@@ -103,9 +104,30 @@ body{
     font-family: var(--primaryFontR);
     line-height: 1.5;
     background-color: var(--white);
+    color: var(--black);
+    padding: 0;
+    margin: 0;
 }
-
-/* ---------------------------------------- app style----------------------------- */
+/* ----------- Component -------- */
+.button{
+    background-color: transparent;
+    width: 20rem;
+    height: 6rem;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-family: var(--primaryFontSB);
+}
+.button--Orange{
+    background-color: var(--secondColor);
+    box-shadow: 0 1rem 1.5rem rgba(245, 127, 23, 24%);
+}
+.button--Blue{
+    background-color: var(--primaryColor);
+    box-shadow: 0 1rem 1.5rem rgba(11, 190, 173, 41%);
+}
 
 /* -------- header style-------- */
 .header{
@@ -116,6 +138,7 @@ body{
     justify-content: space-between;
     align-items: center;
     position: relative;
+    z-index: 6;
 }
 .menu{
     display: flex;
@@ -127,6 +150,9 @@ body{
 }
 .menu__item:last-child{
     margin-right:0;
+}
+.menu__link{
+    color: var(--black);
 }
 .menu__link--active{
     color: var(--primaryColor) ;
@@ -174,6 +200,52 @@ body{
 }
 .nav__hamburgerMenu--open .nav__hamburgerMenu--line::after{
     transform: translateY(8px) rotate(45deg);
+}
+
+/* -------- main style-------- */
+.home{
+    background: url("../images/shapes/header-shape.svg") no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    margin-top: 4rem;
+    height: 80.6vh;
+}
+.home__Content{
+}
+.home__Name{
+    font-family: var(--primaryFontSB);
+    font-size: 2.8rem;
+    color: var(--tiffany);
+}
+.home__Name > span{
+    color: var(--secondColor);
+}
+.home__Title{
+    font-family: var(--primaryFontB);
+    font-size: 5rem;
+    color: var(--primaryColor);
+}
+.home__Caption{
+    opacity: 0.7;
+}
+.home__links{
+    display: flex;
+    margin-top: 3rem;
+}
+.home__link:last-child{
+    margin-left: 4rem;
+}
+
+
+.home__Picture{
+    background: url("../images/header-avatar.jpg") no-repeat;
+    background-position: 52% 50% ;
+    background-size: cover;
+    width: 38rem;
+    height:38rem;
+    border-radius: 50rem;
+    border: white solid 1rem;
+    box-shadow: 0 0.5rem 4rem rgba(96, 233, 255, 27%);
 }
 
 

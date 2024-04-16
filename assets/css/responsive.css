@@ -1,5 +1,21 @@
 @media screen and (max-width: 1200px) {
-
+    .home__Name{
+        font-size: 2.6rem;
+    }
+    .home__Title{
+        font-size: 4.5rem;
+    }
+    .home__Caption{
+        font-size: 1.5rem;
+    }
+    .button{
+        width: 18rem;
+        height:5rem;
+    }
+    .home__Picture{
+        width: 34rem;
+        height: 34rem;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -12,6 +28,29 @@
     .menu__item{
         margin-right: 2.5rem;
     }
+    .home__Picture{
+        width: 30rem;
+        height:30rem;
+    }
+    .home__Name{
+        font-size: 2.4rem;
+    }
+    .home__Title{
+        font-size: 3.5rem;
+    }
+    .home__Caption{
+        font-size: 1.1rem;
+    }
+    .button{
+        width: 14rem;
+        height: 4.5rem;
+        font-size: 1.4rem;
+    }
+    .home{
+        height: 37vh ;
+    }
+    
+
 }
 
 @media screen and (max-width: 768px) {
@@ -39,8 +78,14 @@
     .nav__hamburgerMenu{
         display: flex;
     }
+    .home{
+        height: 42vh ;
+    }
+    
 }
 
 @media screen and (max-width: 576px) {
-
+    .home{
+        background-image: none;
+    }
 }
