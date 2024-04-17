@@ -16,6 +16,9 @@
         width: 34rem;
         height: 34rem;
     }
+    .home{
+        height: 48rem ;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -47,7 +50,7 @@
         font-size: 1.4rem;
     }
     .home{
-        height: 37vh ;
+        height: 43rem ;
     }
     
 
@@ -78,9 +81,7 @@
     .nav__hamburgerMenu{
         display: flex;
     }
-    .home{
-        height: 42vh ;
-    }
+    
     
 }
 

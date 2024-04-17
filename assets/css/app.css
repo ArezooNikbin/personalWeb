@@ -202,15 +202,13 @@ body{
     transform: translateY(8px) rotate(45deg);
 }
 
-/* -------- main style-------- */
+/* -------- home style-------- */
 .home{
     background: url("../images/shapes/header-shape.svg") no-repeat;
     background-position: bottom;
     background-size: contain;
     margin-top: 4rem;
-    height: 80.6vh;
-}
-.home__Content{
+    height: 64rem;
 }
 .home__Name{
     font-family: var(--primaryFontSB);
@@ -235,8 +233,6 @@ body{
 .home__link:last-child{
     margin-left: 4rem;
 }
-
-
 .home__Picture{
     background: url("../images/header-avatar.jpg") no-repeat;
     background-position: 52% 50% ;
@@ -247,5 +243,6 @@ body{
     border: white solid 1rem;
     box-shadow: 0 0.5rem 4rem rgba(96, 233, 255, 27%);
 }
+/* -------- about style-------- */
 
 
