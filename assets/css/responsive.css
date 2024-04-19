@@ -19,6 +19,12 @@
     .home{
         height: 48rem ;
     }
+    .serviceCard__title{
+        font-size: 2rem;
+    }
+    .serviceCard__caption{
+        font-size: 1.4rem;
+    }
 }
 
 @media screen and (max-width: 992px) {
