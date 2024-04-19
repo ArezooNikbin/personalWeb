@@ -89,4 +89,28 @@
     .home{
         background-image: none;
     }
+    .aboutUs {
+        margin: 14rem 0px;
+    }
+    .sectionHead__title{
+        font-size: 3rem;   
+    }
+    .sectionHead__caption{
+       font-size: 1rem;
+    }
+    .sectionHead__caption::after{
+        width: 15rem;
+    }
+    .sectionHead__caption::before{
+        width:3rem;
+    }
+    .aboutUs__title{
+        font-size: 1.8rem;
+    }
+    .aboutUs__caption, .aboutUs__listItem{
+        font-size: 1.4rem;
+    }
+    .aboutUs__listTitle{
+        font-size: 1.6rem;
+    }
 }
