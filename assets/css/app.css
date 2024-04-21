@@ -169,6 +169,9 @@ body{
 .boxShadow{
     box-shadow: 0 0.5rem 4rem rgba(96, 233, 255, 27%);
 }
+.skewReset{
+    transform: skewY(6deg);
+}
 
 /* -------- header style-------- */
 .header{
@@ -382,5 +385,106 @@ body{
     text-align: center;
     z-index: 5;
 }
+/* -------- Resume style-------- */
+.resume{
+    margin: 14rem 0;
+    background-color: var(--white);
+    transform: skewY(-6deg);
+    padding: 4rem 0;
+}
+.resume__list{
+    background-color: var(--white);
+    position: relative;
+    z-index: 4;
+    padding: 1rem 0;
+}
+.resume__list::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4.2rem;
+    height: 100%;
+    background-color: var(--primaryColor);
+    z-index: -1;
+}
+.resumelist__item{
+    display: flex;
+    align-items: center;
+    margin: 4rem 0;
+    position: relative;
+    padding: 0.6rem 0;
+}
+.resumelist__item::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6rem;
+    height: 100%;
+    background-color: var(--primaryColor);
+    border-top-right-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    z-index: -2;
+}
+.resumelist__icon{
+    margin-left: 1rem;
+}
+.resumelist__text{
+    display: flex;
+    font-family: var(--primaryFontSB);
+    font-size: 2rem;
+    color: #707070;
+    margin-left: 4rem;
+}
+.resume__content{
+    margin-left: 8rem;
+    border-left: 0.3rem solid var(--primaryColor);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3rem;
+}
+.resumeContent__item{
+    margin-bottom: 2rem;
+}
+.resumeitem__head{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.resumeitem__head::before{
+    content: '';
+    width: 1.9rem;
+    height: 1.9rem;
+    position: absolute;
+    top: 0.8rem;
+    left: -4.1rem;
+    background-color: var(--primaryColor);
+    border-radius: 5rem;
+   
+    
+}
+.resumeitem__title{
+    font-family: var(--primaryFontSB);
+    font-size: 2rem;
+    color: #FF5823;
+}
+.resumeitem__date{
+    background-color: #F57F17;
+    box-shadow: 0 0.5rem 1.5rem rgba(245, 127, 23, 24%);
+    color: var(--white);
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 11rem;
+}
+.resumeContent__captionTitle{
+    font-family: var(--primaryFontSB);
+    margin-bottom: 0.5rem;
 
-
+}
+.resumeContent__caption{}
