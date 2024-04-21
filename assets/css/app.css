@@ -397,6 +397,7 @@ body{
     position: relative;
     z-index: 4;
     padding: 1rem 0;
+    height: 100%;
 }
 .resume__list::before{
     content: '';
@@ -449,6 +450,9 @@ body{
 .resumeContent__item{
     margin-bottom: 2rem;
 }
+.resumeContent__item:last-child{
+    margin-bottom: 0;
+}
 .resumeitem__head{
     display: flex;
     justify-content: space-between;
@@ -463,9 +467,7 @@ body{
     top: 0.8rem;
     left: -4.1rem;
     background-color: var(--primaryColor);
-    border-radius: 5rem;
-   
-    
+    border-radius: 5rem;   
 }
 .resumeitem__title{
     font-family: var(--primaryFontSB);
@@ -485,6 +487,5 @@ body{
 .resumeContent__captionTitle{
     font-family: var(--primaryFontSB);
     margin-bottom: 0.5rem;
-
 }
-.resumeContent__caption{}
+

@@ -25,6 +25,9 @@
     .serviceCard__caption{
         font-size: 1.4rem;
     }
+    .resume__content{
+        margin-left: 1rem;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -118,5 +121,27 @@
     }
     .aboutUs__listTitle{
         font-size: 1.6rem;
+    }
+    .resume {
+        margin: 6rem 0;
+    }
+    .resumelist__item {
+        margin: 1.5rem 0;
+    }
+    .resumelist__icon {
+        width: 2rem;
+    }
+    .resumelist__text{
+        font-size: 1.6rem;
+    }
+    .resume__content{
+        margin-left: 0.9rem;
+        margin-top: 4rem;
+    }
+    .resumeitem__title{
+        font-size: 1.8rem;
+    }
+    .resumeitem__date , .resumeContent__captionTitle,.resumeContent__caption {
+        font-size: 1.4rem;
     }
 }
