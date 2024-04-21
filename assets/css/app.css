@@ -415,6 +415,7 @@ body{
     margin: 4rem 0;
     position: relative;
     padding: 0.6rem 0;
+    cursor: pointer;
 }
 .resumelist__item::before{
     content: '';
@@ -427,6 +428,14 @@ body{
     border-top-right-radius: 5rem;
     border-bottom-right-radius: 5rem;
     z-index: -2;
+    transition: all  0.3s ease-in;
+    max-width: 28rem;
+}
+.resumelist__item--active{
+    color: #fff;
+}
+.resumelist__item--active::before{
+    width: 100%;
 }
 .resumelist__icon{
     margin-left: 1rem;
@@ -435,7 +444,6 @@ body{
     display: flex;
     font-family: var(--primaryFontSB);
     font-size: 2rem;
-    color: #707070;
     margin-left: 4rem;
 }
 .resume__content{
@@ -446,6 +454,10 @@ body{
     flex-direction: column;
     justify-content: center;
     padding-left: 3rem;
+    display: none;
+}
+.resume__content--show{
+    display: flex;
 }
 .resumeContent__item{
     margin-bottom: 2rem;
