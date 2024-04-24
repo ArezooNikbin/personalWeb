@@ -28,7 +28,10 @@
     .resume__content{
         margin-left: 1rem;
     }
-
+    .pricingCard__buttom{
+        width: 15rem;
+        height: 5rem;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -148,6 +151,10 @@
     .portfolio__list{
         justify-content: center;
         margin-bottom: 2rem;
+    }
+    .pricingCard__buttom{
+        width: 20rem;
+        height: 6rem;
     }
     
 }

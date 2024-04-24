@@ -593,6 +593,10 @@ body{
     align-items: center;
     justify-content: center;
 }
+.pricingCard__buttom > a {
+    color: var(--white);
+    font-family: var(--primaryFontSB);
+}
 .pricingCard__buttom--orange, .pricingCard__head--orange{
     background-color: var(--orange);
 }
@@ -611,10 +615,7 @@ body{
 .pricingCard__buttom--pink{
     box-shadow: 0 0.5rem 1.5rem rgba(245, 39, 108, 24%);
 }
-.pricingCard__buttom > a {
-    color: var(--white);
-    font-family: var(--primaryFontSB);
-}
+
 
 
 
