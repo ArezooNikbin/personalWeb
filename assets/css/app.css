@@ -77,8 +77,10 @@ a{
     --primaryColor:#0ABEAD;
     --secondColor:#F57F17;
     --purple:#8540FF;
+    --purple2:#803AFB;
     --yellow:#FFC50C;
     --magenta:#EC407A;
+    --pink:#F5276C;
     --orange:#FF6331;
     --blue:#13B6FF;
     --tiffany:#0CBFAE ;
@@ -501,9 +503,6 @@ body{
     margin-bottom: 0.5rem;
 }
 /* -------- Portfolio style-------- */
-.portfolio{
-
-}
 .portfolio__list{
     display: flex;
     justify-content: center;
@@ -547,7 +546,75 @@ body{
     position: static !important;
     margin-top: 1rem;
 }
-
+/* -------- Pricing style-------- */
+.pricing{
+    margin: 14rem 0;
+    background-color: var(--white);
+    transform: skewY(-6deg);
+    padding: 3rem 0 10rem 0;
+}
+.pricing__card{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0.5rem 1.5rem rgba(96, 233, 255, 27%);
+}
+.pricingCard__head{
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+.pricingCard__title{
+    font-family: var(--primaryFontSB);
+    font-size: 3.6rem;
+}
+.pricingCard__price{
+    font-family: var(--primaryFontSB);
+    font-size: 2.4rem;
+}
+.pricingCard__body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0;
+}
+.pricingCard__item{
+   margin-bottom: 2rem;
+}
+.pricingCard__icon{
+    margin-right: 1rem;
+}
+.pricingCard__buttom{
+    width: 20rem;
+    height: 6rem;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pricingCard__buttom--orange, .pricingCard__head--orange{
+    background-color: var(--orange);
+}
+.pricingCard__buttom--orange{
+    box-shadow: 0 0.5rem 1.5rem rgba(245, 127, 23, 24%);
+}
+.pricingCard__buttom--purple, .pricingCard__head--purple{
+    background-color: var(--purple2);
+}
+.pricingCard__buttom--purple{
+    box-shadow: 0 0.5rem 1.5rem rgba(128, 58, 251, 24%);
+}
+.pricingCard__buttom--pink, .pricingCard__head--pink{
+    background-color: var(--pink);
+}
+.pricingCard__buttom--pink{
+    box-shadow: 0 0.5rem 1.5rem rgba(245, 39, 108, 24%);
+}
+.pricingCard__buttom > a {
+    color: var(--white);
+    font-family: var(--primaryFontSB);
+}
 
 
 
