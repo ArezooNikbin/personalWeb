@@ -500,4 +500,54 @@ body{
     font-family: var(--primaryFontSB);
     margin-bottom: 0.5rem;
 }
+/* -------- Portfolio style-------- */
+.portfolio{
+
+}
+.portfolio__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4.5rem;
+    flex-wrap: wrap;
+}
+.portfolioList__item{
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 3rem;
+    text-align: center;
+    cursor: pointer;
+}
+.portfolioList__item--active{
+    width: 15.7rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5rem;
+
+    background-color: var(--primaryColor);
+    color: var(--white);
+}
+.portfolioContent__img{
+    width: 100%;
+}
+.swiper-pagination-bullet{
+    width: 1.8rem !important;
+    height: 1.8rem !important;
+    background-color: var(--white) !important;
+    border: 0.3rem solid #BFBEBE !important;
+}
+.swiper-pagination-bullet-active{
+    border-color: var(--primaryColor) !important;
+}
+.swiper-pagination{
+    position: static !important;
+    margin-top: 1rem;
+}
+
+
+
 

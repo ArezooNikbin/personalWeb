@@ -28,6 +28,7 @@
     .resume__content{
         margin-left: 1rem;
     }
+
 }
 
 @media screen and (max-width: 992px) {
@@ -61,7 +62,6 @@
     .home{
         height: 43rem ;
     }
-    
 
 }
 
@@ -90,6 +90,7 @@
     .nav__hamburgerMenu{
         display: flex;
     }
+    
     
     
 }
@@ -144,4 +145,9 @@
     .resumeitem__date , .resumeContent__captionTitle,.resumeContent__caption {
         font-size: 1.4rem;
     }
+    .portfolio__list{
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    
 }

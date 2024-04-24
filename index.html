@@ -11,10 +11,13 @@
     <!-- Custom css file -->
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+
     <!-- bootstrap file -->
     <link rel="stylesheet" href="assets/css/bootstrap-grid.css">
     <link rel="stylesheet" href="assets/css/bootstrap-utilities.css">
 
+    <!-- Swiper file -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 </head>
 <body>
     <!-- start header -->
@@ -29,7 +32,7 @@
                     <li class="menu__item"><a href="#aboutUs" class="menu__link">About us</a></li>
                     <li class="menu__item"><a href="#resume" class="menu__link">Resume</a></li>
                     <li class="menu__item"><a href="#Services" class="menu__link">Services</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Portfolio</a></li>
+                    <li class="menu__item"><a href="#portfolio" class="menu__link">Portfolio</a></li>
                     <li class="menu__item"><a href="#" class="menu__link">Pricing</a></li>
                     <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
                 </ul>
@@ -108,7 +111,7 @@
         </section>
         <!-- end about -->
 
-        <!-- start Services -->
+        <!-- start services -->
         <section id="Services" class="Services">
             <div class="container">
                 <div class="row">
@@ -173,7 +176,7 @@
                 </div>
             </div>
         </section>
-        <!-- end Services -->
+        <!-- end services -->
 
          <!-- start Resume -->
          <section  class="resume boxShadow">
@@ -353,6 +356,54 @@
             </div>
          </section>
          <!-- end Resume -->
+
+         <!-- start portfolio -->
+         <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="sectionHead">
+                        <h2 class="sectionHead__title">Portfolio</h2>
+                        <p class="sectionHead__caption sectionHead__caption--color">Check in Our Latest Works</p>
+                    </div>
+                    <div class="col-12">
+                        <ul class="portfolio__list">
+                            <li class="portfolioList__item portfolioList__item--active">All Work </li>
+                            <li class="portfolioList__item"> Illustration</li>
+                            <li class="portfolioList__item">Animation</li>
+                            <li class="portfolioList__item">App UI  </li>
+                            <li class="portfolioList__item">Web UI </li>
+                            <li class="portfolioList__item">Social Media</li>
+                            <li class="portfolioList__item">Print Design</li>
+                        </ul>
+                    </div>
+                    <div class="col-12">
+                        <div class="portfolio-content">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img class="portfolioContent__img" src="assets/images/portfolio-1.jpg" alt="Portfolio Image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="portfolioContent__img" src="assets/images/portfolio-2.jpg" alt="Portfolio Image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="portfolioContent__img" src="assets/images/portfolio-3.jpg" alt="Portfolio Image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="portfolioContent__img" src="assets/images/portfolio-1.jpg" alt="Portfolio Image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="portfolioContent__img" src="assets/images/portfolio-2.jpg" alt="Portfolio Image">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <!-- end portfolio -->
     </main>
 
 
@@ -360,6 +411,25 @@
 
 
 
-<script src="assets/js/app.js"></script>   
+<script src="assets/js/app.js"></script> 
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script type="text/javascript">
+    const swiper = new Swiper('.swiper',{
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        breakpoints: {
+        767: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+        },
+    }
+    })
+</script>  
 </body>
 </html>
