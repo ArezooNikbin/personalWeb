@@ -36,6 +36,7 @@
         top: 30rem;
         left: 22rem;
     }
+    
 }
 
 @media screen and (max-width: 992px) {
@@ -73,7 +74,17 @@
         top: 30rem;
         left: 15rem;
     }
-
+    .footer__text{
+        font-size: 1.6rem;
+        letter-spacing: 0.3rem;
+    }
+    .footerList__item{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .footerList__icon{
+        width: 2.4rem;   
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -167,5 +178,12 @@
     .contactUs__mapIcon{
        display: none;
     }
-    
+    .footer__list {
+        justify-content: center;
+    }
+    .footer__text{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
 }
