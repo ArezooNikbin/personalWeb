@@ -616,7 +616,7 @@ body{
 .pricingCard__buttom--pink{
     box-shadow: 0 0.5rem 1.5rem rgba(245, 39, 108, 24%);
 }
-/* -------- Pricing contactUs-------- */
+/* --------  contactUs style -------- */
 .contactUs__background{
     background: url(../images/map.jpg) no-repeat;
     background-size: cover;
@@ -688,6 +688,49 @@ body{
     height: 5rem;
     border-radius: 5rem;
 }
+/* --------  footer style -------- */
+.footer{
+    height: 10rem;
+    display: flex;
+    align-items: center;
+}
+.footer__text{
+    font-family: var(--primaryFontSB);
+    font-size: 1.8rem;
+    letter-spacing: 0.5rem;
+}
+.footer__list{
+    display: flex;
+    justify-content: end;
+}
+.footerList__item{
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: var(--black);
+    fill: var(--white);
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    transition: all 4ms ease-in-out;
+}
+.footerList__item:hover{
+    background-color: var(--primaryColor);
+}
+.footerList__icon{
+    width: 3.5rem;
+    
+}
+
+
+
+
+
+
+
+
+
 
 
 
