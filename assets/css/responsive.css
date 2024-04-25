@@ -32,6 +32,10 @@
         width: 15rem;
         height: 5rem;
     }
+    .contactUs__mapIcon{
+        top: 30rem;
+        left: 22rem;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -64,6 +68,10 @@
     }
     .home{
         height: 43rem ;
+    }
+    .contactUs__mapIcon{
+        top: 30rem;
+        left: 15rem;
     }
 
 }
@@ -155,6 +163,9 @@
     .pricingCard__buttom{
         width: 20rem;
         height: 6rem;
+    }
+    .contactUs__mapIcon{
+       display: none;
     }
     
 }
