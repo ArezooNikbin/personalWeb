@@ -110,7 +110,7 @@ body{
     padding: 0 !important;
     margin: 0 !important;
 }
-/* ----------- Component -------- */
+/* ----------- Utilities -------- */
 .button{
     background-color: transparent;
     width: 20rem;
@@ -141,6 +141,7 @@ body{
 }
 .sectionHead__caption{
     position: relative;
+    letter-spacing: 0.3rem;
 }
 .sectionHead__caption--color{
     color: var(--black);
@@ -177,7 +178,13 @@ body{
 
 /* -------- header style-------- */
 .header{
+    background-color: var(--white);
     box-shadow: 0 0.5rem 4rem rgba(4, 195, 255, 16%);
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 12;
 }
 .nav{
     display: flex;
@@ -253,7 +260,7 @@ body{
     background: url("../images/shapes/header-shape.svg") no-repeat;
     background-position: bottom;
     background-size: contain;
-    margin-top: 4rem;
+    margin-top: 12rem;
     height: 64rem;
 }
 .home__Name{
@@ -352,6 +359,7 @@ body{
     color: var(--white);
     padding: 6rem 4rem;
     margin-bottom: 1.5rem;
+    overflow: hidden;
 }
 .service__Card--purple{
     background-color: var(--purple);
@@ -376,6 +384,13 @@ body{
 .service__Card--green{
     background-color: var(--green);
     box-shadow: 0 0.5rem 4rem rgba(73, 175, 70, 35%);
+}
+.serviceCard__shape{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: -3.5rem;
 }
 .serviceCard__title{
     font-family: var(--primaryFontB);
